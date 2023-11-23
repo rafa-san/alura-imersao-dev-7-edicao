@@ -1,11 +1,201 @@
-/*
-Paleta de cores:
-#a1b0c0
-#2bdefd
-#101926
-*/
+@charset "utf-8";
+
+:root {
+  --cor_1: #6B7D14;
+  --cor_2: #7D1D14;
+  --cor_3: #14437D;
+  --cor_4: #6696D1;
+  --cor_5: #EEFCA7;
+}
+
+* {
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
 
+/* HEADER */
 header {
-  background-color: aliceblue;
+  text-align: center;
+  padding: 24px 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header .logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-normal .links-menu {
+  margin: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-normal #icone-menu {
+  color: red;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 2px;
+  display: block;
+}
+
+.menu-normal .link-aula {
+  display: none;
+}
+
+.m-responsivo {
+  cursor: pointer;
+  margin: 8px;
+  padding: 8px;
+  display: block;
+}
+
+.m-responsivo .links-menu {
+  list-style-type: none;
+}
+
+.m-responsivo li {
+  margin: 2px 0;
+  padding: 2px 0;
+}
+
+.m-responsivo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* INDEX */
+.pagina-principal {
+  background-image: url('../imagens/background.png');
+  background-position: center;
+  height: 100vh;
+}
+
+.container-aulas {
+  margin: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-aulas .aula {
+  border: 1px solid var(--cor_4);
+  border-radius: 8px;
+  margin: 8px;
+  padding: 40px;
+  text-align: center;
+  width: 40%;
+}
+
+.container-aulas .aula a {
+  color: white;
+  font-size: 1.6em;
+  text-decoration: none;
+}
+
+.codepen {
+  margin: auto;
+  padding: 8px;
+  width: 95%;
+}
+
+.codepen ul {
+  list-style-position: inside;
+  margin-top: 16px;
+  line-height: 2.0em;
+}
+
+
+/* AULAS */
+.pagina-aula header,
+.pagina-aula footer {
+  background-color: var(--cor_3);
+}
+
+.conteudo-aula {
+  /* background-color: var(--cor_4); */
+  border: 1px solid red;
+  margin: auto;
+  padding: 16px 8px;
+  width: 95%;
+  max-width: 1000px;
+}
+
+.conteudo-aula ul {
+  list-style-position: inside;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+  display: flex;
+  justify-content: center;
+}
+
+.container-1 div,
+.container-2 div {
+  margin: 0 24px;
+}
+
+form label {
+  text-align: center;
+}
+
+form label,
+form input,
+form select {
+  /* border: 1px solid black; */
+  height: 30px;
+  margin: 8px 0;
+  width: 200px;
+  display: block;
+}
+
+/* form input,
+form select {
+  display: block;
+  margin: 8px 0;
+} */
+
+
+/* FOOTER */
+.pagina-principal footer {
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.pagina-aula footer {
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 16px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 1.5em;
+  margin: 8px;
+}
+
+footer i {
+  transition: 0.3s ease-in-out;
+}
+
+footer i:hover {
+  transform: scale(1.1);
 }

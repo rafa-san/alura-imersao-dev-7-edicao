@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+@media screen and (min-width: 768px) {
+  /* HEADER */
+  .menu-normal .links-menu {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .links-menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .menu-normal #icone-menu {
+    cursor: pointer;
+    display: none;
+  }
+
+  .menu-normal .link-aula {
+    display: block;
+  }
+}
