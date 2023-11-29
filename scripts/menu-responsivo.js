@@ -6,8 +6,7 @@ function menu() {
   const menuResponsivo = document.getElementById('menu-responsivo');
 
   if (menuResponsivo.className === 'menu-normal') {
-    // iconeMenu.style.cursor = 'pointer';
-    iconeMenu.innerHTML = '&#10060;';
+    iconeMenu.innerHTML = '&#10799;';
     iconeMenu.title = 'Fechar Menu';
     menuResponsivo.className = ' m-responsivo';
   } else {
