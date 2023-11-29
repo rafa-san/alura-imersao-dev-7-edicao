@@ -3,6 +3,7 @@
 @media screen and (min-width: 768px) {
   /* HEADER */
   .menu-normal .links-menu {
+    margin: 24px 8px 11px;
     flex-direction: row;
     justify-content: space-around;
   }
@@ -13,11 +14,20 @@
   }
 
   .menu-normal #icone-menu {
-    cursor: pointer;
     display: none;
   }
 
   .menu-normal .link-aula {
     display: block;
+  }
+
+  /* AULA 01 */
+  .exercicio {
+    flex-direction: row;
+  }
+
+  .exercicio .imagem {
+    padding: 16px 0;
+    width: 45%;
   }
 }

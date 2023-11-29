@@ -19,7 +19,7 @@
 /* HEADER */
 header {
   text-align: center;
-  padding: 24px 8px;
+  padding: 16px 8px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -31,42 +31,44 @@ header .logo a {
 }
 
 .menu-normal .links-menu {
-  margin: 8px;
-  padding: 8px;
+  margin: 8px 8px 0;
   display: flex;
   flex-direction: column;
 }
 
-.menu-normal #icone-menu {
-  color: red;
+.m-responsivo .links-menu {
+  margin: 8px 8px 0;
+}
+
+.menu-normal #icone-menu,
+.m-responsivo #icone-menu {
+  color: white;
   cursor: pointer;
-  font-size: 20px;
-  margin-top: 2px;
+  font-size: 24px;
+  padding: 16px;
   display: block;
 }
 
-.menu-normal .link-aula {
+.m-responsivo #icone-menu {
+  font-size: 30px;
+  padding: 8px 16px 13px;
+}
+
+.menu-normal .link-aula,
+.m-responsivo .link-aula {
+  list-style-type: none;
+  padding: 6px;
   display: none;
 }
 
-.m-responsivo {
-  cursor: pointer;
-  margin: 8px;
-  padding: 8px;
+.m-responsivo .link-aula {
   display: block;
 }
 
-.m-responsivo .links-menu {
-  list-style-type: none;
-}
-
-.m-responsivo li {
-  margin: 2px 0;
-  padding: 2px 0;
-}
-
-.m-responsivo a {
+.menu-normal .link-aula a,
+.m-responsivo .link-aula a {
   color: #fff;
+  font-size: 19px;
   text-decoration: none;
 }
 
@@ -86,7 +88,7 @@ header .logo a {
 }
 
 .container-aulas .aula {
-  border: 1px solid var(--cor_4);
+  border: 3px inset var(--cor_4);
   border-radius: 8px;
   margin: 8px;
   padding: 40px;
@@ -94,34 +96,34 @@ header .logo a {
   width: 40%;
 }
 
-.container-aulas .aula a {
+.container-aulas .aula:hover {
+  background-color: var(--cor_4);
+  border: 3px outset #fff;
+}
+
+.container-aulas a {
   color: white;
   font-size: 1.6em;
   text-decoration: none;
+  width: 100%;
+  display: block;
 }
 
-.codepen {
-  margin: auto;
-  padding: 8px;
-  width: 95%;
-}
-
-.codepen ul {
-  list-style-position: inside;
-  margin-top: 16px;
-  line-height: 2.0em;
+.container-aulas a:hover {
+  color: var(--cor_3);
 }
 
 
 /* AULAS */
+
+/* GERAL */
 .pagina-aula header,
 .pagina-aula footer {
   background-color: var(--cor_3);
 }
 
 .conteudo-aula {
-  /* background-color: var(--cor_4); */
-  border: 1px solid red;
+  line-height: 1.9em;
   margin: auto;
   padding: 16px 8px;
   width: 95%;
@@ -132,9 +134,60 @@ header .logo a {
   list-style-position: inside;
 }
 
+
+/* AULA 01 */
+.apresentacao {
+  margin: 8px auto;
+  padding: 8px;
+}
+
+.apresentacao h2 {
+  color: var(--cor_3);
+  margin: 8px 0;
+  padding: 8px;
+  text-align: center;
+}
+
+.apresentacao h3 {
+  color: var(--cor_4);
+  margin: 8px 0;
+}
+
+.exercicio {
+  /* background-image: linear-gradient(to bottom, yellow, red); */
+  /* background-image: linear-gradient(to bottom, var(--cor_5), var(--cor_1)); */
+  background-image: linear-gradient(to bottom, var(--cor_4), var(--cor_5));
+  display: flex;
+  flex-direction: column;
+}
+
+.exercicio .imagem {
+  margin: 8px auto;
+  width: 95%;
+}
+
+.exercicio img {
+  height: auto;
+  margin: auto;
+  width: 100%;
+  max-width: 250px;
+  display: block;
+}
+
+.exercicio a {
+  text-decoration: none;
+}
+
+.exercicio .formulario {
+  margin: 8px auto;
+  width: 95%;
+}
+
 .container-1,
 .container-2,
 .container-3 {
+  margin: 8px auto;
+  width: 90%;
   display: flex;
   justify-content: center;
 }
@@ -144,25 +197,38 @@ header .logo a {
   margin: 0 24px;
 }
 
-form label {
+div label {
   text-align: center;
 }
 
-form label,
-form input,
-form select {
-  /* border: 1px solid black; */
+div label,
+div input,
+div select {
   height: 30px;
   margin: 8px 0;
-  width: 200px;
+  width: 100%;
   display: block;
 }
 
-/* form input,
-form select {
-  display: block;
-  margin: 8px 0;
-} */
+button {
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+}
+
+.retorno {
+  background-image: linear-gradient(to bottom, var(--cor_5), var(--cor_4));
+  border-radius: 16px;
+  margin: 8px auto;
+  padding: 16px 8px;
+  width: 50%;
+}
+
+.retorno p {
+  font-size: 1.5em;
+  margin: 4px auto;
+  text-align: center;
+}
 
 
 /* FOOTER */
