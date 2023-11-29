@@ -1,7 +1,7 @@
 const botao = document.querySelector('button');
 const selectOrigem = document.getElementById('moeda-origem');
 const selectDestino = document.getElementById('moeda-destino');
-const retorno = document.querySelector('.retorno');
+const retorno = document.querySelector('.valor-retorno');
     
 botao.addEventListener('click', converter);
 selectOrigem.addEventListener("change", valorOrigem);
@@ -12,12 +12,14 @@ function converter() {
   const valor = Number(document.getElementById('valor').value);
   if (selectOrigem.value === 'real' && selectDestino.value === 'dolar') {
     const valorEmDolares = valor / 4.90;
-    retorno.textContent = valorEmDolares.toFixed(2);
+    const valorFormatadoDolares = formatarValorDolar(valorEmDolares);
+    retorno.textContent = `US${valorFormatadoDolares}`;
   } else if (selectOrigem.value === 'dolar' && selectDestino.value === 'real') {
     const valorEmReal = valor * 4.90;
-    retorno.textContent = valorEmReal.toFixed(2);
+    const valorFormatadoReais = formatarValorReal(valorEmReal);
+    retorno.textContent = `${valorFormatadoReais}`;
   } else {
-    retorno.textContent = 'Erro';
+    retorno.textContent = 'Ops... Não é possível fazer essa conversão.';
   }
 }
 
@@ -33,4 +35,11 @@ function valorDestino() {
   return escolha;
 }
 
+function formatarValorDolar(v) {
+  return v.toLocaleString('en-US', {style:'currency', currency:'USD', minimumFractionDigits: 2, maximumFractionDigits: 2});
+}
+
+function formatarValorReal(v) {
+  return v.toLocaleString('pt-BR', {style:'currency', currency:'BRL', minimumFractionDigits: 2, maximumFractionDigits: 2});
+}
 
