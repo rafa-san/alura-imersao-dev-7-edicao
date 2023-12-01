@@ -88,7 +88,8 @@ header .logo a {
 }
 
 .container-aulas .aula {
-  border: 3px inset var(--cor_4);
+  background-image: linear-gradient(to bottom, var(--cor_3), var(--cor_4));
+  border: 3px solid var(--cor_4);
   border-radius: 8px;
   margin: 8px;
   padding: 40px;
@@ -97,8 +98,8 @@ header .logo a {
 }
 
 .container-aulas .aula:hover {
-  background-color: var(--cor_4);
   border: 3px outset #fff;
+  box-shadow: 2px 2px 6px #fff;
 }
 
 .container-aulas a {
@@ -109,9 +110,9 @@ header .logo a {
   display: block;
 }
 
-.container-aulas a:hover {
+/* .container-aulas a:hover {
   color: var(--cor_3);
-}
+} */
 
 
 /* AULAS */
@@ -153,9 +154,14 @@ header .logo a {
   margin: 8px 0;
 }
 
+hr {
+  background-color: var(--cor_4);
+  border: none;
+  height: 4px;
+  margin: 24px 0 32px;
+}
+
 .exercicio {
-  /* background-image: linear-gradient(to bottom, yellow, red); */
-  /* background-image: linear-gradient(to bottom, var(--cor_5), var(--cor_1)); */
   background-image: linear-gradient(to bottom, var(--cor_4), var(--cor_5));
   display: flex;
   flex-direction: column;
@@ -174,8 +180,13 @@ header .logo a {
   display: block;
 }
 
-.exercicio a {
-  text-decoration: none;
+.exercicio a,
+div label {
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: auto;
+  display: block;
 }
 
 .exercicio .formulario {
@@ -194,26 +205,47 @@ header .logo a {
 
 .container-1 div,
 .container-2 div {
-  margin: 0 24px;
+  margin: 4px;
+  width: 50%;
 }
 
 div label {
   text-align: center;
 }
 
-div label,
 div input,
 div select {
+  border: none;
+  color: var(--cor_4);
+  font-weight: 600;
   height: 30px;
-  margin: 8px 0;
+  min-height: 2em;
+  letter-spacing: 2px;
+  margin: 8px auto;
+  padding-left: 6px;
   width: 100%;
+  max-width: 200px;
   display: block;
 }
 
 button {
-  border-radius: 8px;
+  background-color: #fff;
+  border: 2px solid var(--cor_4);
+  border-radius: 20px;
+  color: var(--cor_4);
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
   padding: 16px;
   margin: 8px;
+  width: 30%;
+  max-width: 150px;
+}
+
+button:hover {
+  background-color: var(--cor_4);
+  border: 2px solid transparent;
+  color: #fff;
 }
 
 .retorno {
@@ -225,9 +257,20 @@ button {
 }
 
 .retorno p {
+  color: #fff;
   font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 2px;
   margin: 4px auto;
   text-align: center;
+}
+
+
+/* AULA 2 */
+.aula-2 .exercicio {
+  background-image: url('../imagens/background-aula-2.png');
+  display: flex;
+  flex-direction: column;
 }
 
 
