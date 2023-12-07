@@ -18,8 +18,8 @@
 
 /* HEADER */
 header {
+  padding: 8px;
   text-align: center;
-  padding: 16px 8px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -75,13 +75,24 @@ header .logo a {
 
 /* INDEX */
 .pagina-principal {
-  background-image: url('../imagens/background.png');
+  background-image: url('../imagens/background-2.png');
   background-position: center;
+  background-size: cover;
   height: 100vh;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.pagina-principal header {
+  margin: 24px 0;
+  padding: 8px;
 }
 
 .container-aulas {
-  margin: 24px;
+  margin: 24px 0;
+  padding: 8px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -91,196 +102,27 @@ header .logo a {
   background-image: linear-gradient(to bottom, var(--cor_3), var(--cor_4));
   border: 3px solid var(--cor_4);
   border-radius: 8px;
+  color: #fff;
+  font-size: 1.6em;
   margin: 8px;
-  padding: 40px;
+  padding: 40px 8px;
   text-align: center;
+  text-decoration: none;
   width: 40%;
 }
 
 .container-aulas .aula:hover {
-  border: 3px outset #fff;
+  border: 3px solid #fff;
   box-shadow: 2px 2px 6px #fff;
-}
-
-.container-aulas a {
-  color: white;
-  font-size: 1.6em;
-  text-decoration: none;
-  width: 100%;
-  display: block;
-}
-
-/* .container-aulas a:hover {
-  color: var(--cor_3);
-} */
-
-
-/* AULAS */
-
-/* GERAL */
-.pagina-aula header,
-.pagina-aula footer {
-  background-color: var(--cor_3);
-}
-
-.conteudo-aula {
-  line-height: 1.9em;
-  margin: auto;
-  padding: 16px 8px;
-  width: 95%;
-  max-width: 1000px;
-}
-
-.conteudo-aula ul {
-  list-style-position: inside;
-}
-
-
-/* AULA 01 */
-.apresentacao {
-  margin: 8px auto;
-  padding: 8px;
-}
-
-.apresentacao h2 {
-  color: var(--cor_3);
-  margin: 8px 0;
-  padding: 8px;
-  text-align: center;
-}
-
-.apresentacao h3 {
-  color: var(--cor_4);
-  margin: 8px 0;
-}
-
-hr {
-  background-color: var(--cor_4);
-  border: none;
-  height: 4px;
-  margin: 24px 0 32px;
-}
-
-.exercicio {
-  background-image: linear-gradient(to bottom, var(--cor_4), var(--cor_5));
-  display: flex;
-  flex-direction: column;
-}
-
-.exercicio .imagem {
-  margin: 8px auto;
-  width: 95%;
-}
-
-.exercicio img {
-  height: auto;
-  margin: auto;
-  width: 100%;
-  max-width: 250px;
-  display: block;
-}
-
-.exercicio a,
-div label {
-  color: #fff;
-  font-size: 1.1em;
-  font-weight: bold;
-  margin: auto;
-  display: block;
-}
-
-.exercicio .formulario {
-  margin: 8px auto;
-  width: 95%;
-}
-
-.container-1,
-.container-2,
-.container-3 {
-  margin: 8px auto;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-}
-
-.container-1 div,
-.container-2 div {
-  margin: 4px;
-  width: 50%;
-}
-
-div label {
-  text-align: center;
-}
-
-div input,
-div select {
-  border: none;
-  color: var(--cor_4);
-  font-weight: 600;
-  height: 30px;
-  min-height: 2em;
-  letter-spacing: 2px;
-  margin: 8px auto;
-  padding-left: 6px;
-  width: 100%;
-  max-width: 200px;
-  display: block;
-}
-
-button {
-  background-color: #fff;
-  border: 2px solid var(--cor_4);
-  border-radius: 20px;
-  color: var(--cor_4);
-  cursor: pointer;
-  font-size: 1.1em;
-  font-weight: bold;
-  padding: 16px;
-  margin: 8px;
-  width: 30%;
-  max-width: 150px;
-}
-
-button:hover {
-  background-color: var(--cor_4);
-  border: 2px solid transparent;
-  color: #fff;
-}
-
-.retorno {
-  background-image: linear-gradient(to bottom, var(--cor_5), var(--cor_4));
-  border-radius: 16px;
-  margin: 8px auto;
-  padding: 16px 8px;
-  width: 50%;
-}
-
-.retorno p {
-  color: #fff;
-  font-size: 1.5em;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin: 4px auto;
-  text-align: center;
-}
-
-
-/* AULA 2 */
-.aula-2 .exercicio {
-  background-image: url('../imagens/background-aula-2.png');
-  display: flex;
-  flex-direction: column;
 }
 
 
 /* FOOTER */
 .pagina-principal footer {
-  padding: 40px;
+  margin: 24px 0;
+  padding: 8px;
   text-align: center;
   width: 100%;
-  position: absolute;
-  bottom: 0;
 }
 
 .pagina-aula footer {
