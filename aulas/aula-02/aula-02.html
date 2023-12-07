@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aula 02</title>
+  <link rel="stylesheet" href="../../estilo/principal.css" />
+  <link rel="stylesheet" href="../../estilo/responsivo.css" />
+  <link rel="stylesheet" href="../../estilo/aulas.css" />
+</head>
+
+<body class="pagina-aula">
+  <header>
+    <div class="logo">
+      <h1><a href="../../index.html">Imersão Dev 7ª Edição</a></h1>
+    </div>
+    <nav id="menu-responsivo" class="menu-normal">
+      <ul class="links-menu">
+        <li id="icone-menu" title="Abrir Menu">&#9776;</li>
+        <li class="link-aula"><a href="#">Aula 01</a></li>
+        <li class="link-aula"><a href="#">Aula 02</a></li>
+        <li class="link-aula"><a href="#">Aula 03</a></li>
+        <li class="link-aula"><a href="#">Aula 04</a></li>
+        <li class="link-aula"><a href="#">Aula 05</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="conteudo-aula aula-2">
+    <section class="apresentacao">
+      <h2>Desenvolva suas Habilidades com um Jogo de Adivinhação</h2>
+      <div>
+        <h3>Introdução</h3>
+        <p>Na segunda aula da Imersão Dev, vamos mergulhar na criação de um jogo de adivinhação. Neste desafio, o programa escolherá um número aleatório, e nosso objetivo é adivinhar esse número.</p>
+        <p>Durante esta aula, você vai:</p>
+        <ul>
+          <li>Realizar o fork do projeto com o template inicial;</li>
+          <li>Realizar testes interativos usando prompt;</li>
+          <li>Criar a lógica do jogo utilizando estruturas condicionais como if e else;</li>
+          <li>Utilizar a função Math.random() do JavaScript para gerar números aleatórios.</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="exercicio">
+      <div class="imagem">
+        <img src="../../imagens/aula-2.png" />
+      </div>
+      
+      <div class="formulario">
+        <div class="container-1">
+          <p>O computador escolherá um número aleatório entre 1 e 100.</p>
+          <p>Você consegue adivinhar qual é esse número em 6 tentativas?</p>
+        </div>
+
+        <div class="container-2">
+          <label for="inputPalpite">Digite seu palpite:</label>
+          <input type="number" id="inputPalpite" />
+        </div>
+
+        <div class="container-3">
+          <button class="enviarPalpite">Acertei?</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="retorno">
+      <p>Tentativas: <span class="tentativas"></span></p>
+      <p>Seus Palpites: <span class="listaDePalpites"></span></p>
+      <p>Acertei ou Errei?: <span class="resultado"></span></p>
+      <p>Dica: <span class="dica"></span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por: Rafa Santana</p>
+
+    <section class="contato">
+      <a href="https://github.com/rafa-san" target="_blank"><i class="fa brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/rafael-santana-53750415a/" target="_blank">
+        <i class="fa brands fa-linkedin"></i>
+      </a>
+    </section>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous"></script>
+  <script src="../../scripts/menu-responsivo.js"></script>
+  <script src="aula-02.js"></script>
+</body>
+
+</html>
