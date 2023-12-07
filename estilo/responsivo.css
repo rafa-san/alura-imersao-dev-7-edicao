@@ -21,13 +21,19 @@
     display: block;
   }
 
+
   /* AULA 01 */
-  .exercicio {
-    flex-direction: row;
+  .aula-1 .exercicio .formulario {
+    max-width: 58%;
   }
 
-  .exercicio .imagem {
+  .aula-1 .exercicio .imagem {
+    max-width: 41%;
     padding: 16px 0;
-    width: 45%;
+  }
+
+  .aula-1 .container-1 div,
+  .aula-1 .container-2 div {
+    max-width: 45%;
   }
 }
