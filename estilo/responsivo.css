@@ -21,6 +21,11 @@
     display: block;
   }
 
+  /* INDEX */
+  .container-aulas .aula {
+    max-width: 40%;
+  }
+
 
   /* AULA 01 */
   .aula-1 .exercicio .formulario {
@@ -35,5 +40,12 @@
   .aula-1 .container-1 div,
   .aula-1 .container-2 div {
     max-width: 45%;
+  }
+
+
+  /* AULA 02 */
+  .aula-2 .exercicio,
+  .aula-2 .retorno {
+    max-width: 46%;
   }
 }
