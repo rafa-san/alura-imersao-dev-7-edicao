@@ -45,7 +45,8 @@ hr {
 
 /* AULA 01 */
 .aula-1 .exercicio {
-  background-image: linear-gradient(to bottom, var(--cor_4), var(--cor_5));
+  background-image: url('../imagens/background-1.png');
+  padding: 16px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -127,7 +128,7 @@ hr {
 }
 
 .aula-1 .retorno {
-  background-image: linear-gradient(to bottom, var(--cor_5), var(--cor_4));
+  background-image: url('../imagens/background-1.png');
   border-radius: 16px;
   margin: 24px auto 8px;
   padding: 16px 8px;
@@ -146,8 +147,101 @@ hr {
 
 
 /* AULA 2 */
-/* .aula-2 .exercicio {
-  background-image: url('../imagens/background-aula-2.png');
+.aula-2 .exercicio-e-retorno {
+  background-image: url('../imagens/background-1.png');
+  padding: 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.aula-2 .exercicio,
+.aula-2 .retorno {
+  border: 3px solid #fff;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px #fff;
+  margin: 8px auto;
+  padding: 24px 8px;
+  width: 95%;
+}
+
+.aula-2 .exercicio .formulario {
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-align: center;
   display: flex;
   flex-direction: column;
-} */
+  justify-content: space-around;
+}
+
+.aula-2 .exercicio .formulario p {
+  margin: 16px 0;
+}
+
+.aula-2 .exercicio input {
+  border: none;
+  color: var(--cor_4);
+  font-weight: 600;
+  height: 30px;
+  min-height: 2em;
+  letter-spacing: 2px;
+  margin: 16px auto 8px;
+  padding-left: 6px;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+.aula-2 .exercicio .container-3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aula-2 .exercicio button {
+  background-color: #fff;
+  border: 2px solid var(--cor_4);
+  border-radius: 20px;
+  color: var(--cor_4);
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 8px 2px;
+  margin: 24px auto;
+  width: 46%;
+}
+
+.aula-2 .exercicio button:hover {
+  background-color: var(--cor_4);
+  border: 2px solid transparent;
+  color: #fff;
+}
+
+.aula-2 .retorno {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.aula-2 .retorno p {
+  margin: 16px 0;
+}
+
+.aula-2 .tentativas-e-listaDePalpites,
+.aula-2 .resultado-e-avisos {
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 500;
+  width: 100%;
+}
+
+.aula-2 .retorno p {
+  margin: 8px auto;
+  text-align: center;
+}
+
+.aula-2 span {
+  height: 34px;
+  width: 100%;
+  display: block;
+}
