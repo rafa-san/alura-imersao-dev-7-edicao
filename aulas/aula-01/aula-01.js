@@ -19,7 +19,7 @@ function converter() {
     const valorFormatadoReais = formatarValorReal(valorEmReal);
     retorno.textContent = `${valorFormatadoReais}`;
   } else {
-    retorno.textContent = 'Ops... Não é possível fazer essa conversão.';
+    retorno.innerHTML = 'Não é possível fazer essa conversão &#128530;';
   }
 }
 
@@ -42,4 +42,3 @@ function formatarValorDolar(v) {
 function formatarValorReal(v) {
   return v.toLocaleString('pt-BR', {style:'currency', currency:'BRL', minimumFractionDigits: 2, maximumFractionDigits: 2});
 }
-
