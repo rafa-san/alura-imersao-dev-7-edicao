@@ -46,6 +46,7 @@ hr {
 /* AULA 01 */
 .aula-1 .exercicio {
   background-image: url('../imagens/background-1.png');
+  background-position: center;
   padding: 16px 0;
   display: flex;
   flex-wrap: wrap;
@@ -129,6 +130,7 @@ hr {
 
 .aula-1 .retorno {
   background-image: url('../imagens/background-1.png');
+  background-position: center;
   border-radius: 16px;
   margin: 24px auto 8px;
   padding: 16px 8px;
@@ -149,6 +151,7 @@ hr {
 /* AULA 2 */
 .aula-2 .exercicio-e-retorno {
   background-image: url('../imagens/background-1.png');
+  background-position: center left;
   padding: 16px 0;
   display: flex;
   flex-wrap: wrap;
@@ -157,7 +160,7 @@ hr {
 
 .aula-2 .exercicio,
 .aula-2 .retorno {
-  border: 3px solid #fff;
+  border: 1px solid #fff;
   border-radius: 8px;
   box-shadow: 2px 2px 6px #fff;
   margin: 8px auto;
