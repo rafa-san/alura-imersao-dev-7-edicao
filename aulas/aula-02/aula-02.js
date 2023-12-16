@@ -27,6 +27,11 @@ function conferirPalpite() {
     dicaMarota.style.display = 'none';
     enviarPalpite.style.display = 'none';
     fimDeJogo();
+  } else if (contagemPalpites === 5) {
+      resultado.innerHTML = `Fim de Jogo! Você não acertou &#128546;`;
+      avisos.innerHTML = 'Tente novamente &#128541;';
+      enviarPalpite.style.display = 'none';
+      fimDeJogo();
   } else if (palpiteUsuario > numeroAleatorio) {
     diferenca = palpiteUsuario - numeroAleatorio;
     if (diferenca > 5) {
@@ -34,7 +39,7 @@ function conferirPalpite() {
       avisos.textContent = `Seu palpite foi alto`;
     } else {
       resultado.innerHTML = `Errou! Mas chegou perto &#128293;`;
-      avisos.textContent = `Seu palpite ficou um pouco acima do número correto!`;
+      avisos.textContent = `Seu último palpite ficou um pouco acima do número correto!`;
     }
   } else if (palpiteUsuario < numeroAleatorio) {
     diferenca =  numeroAleatorio - palpiteUsuario;
@@ -43,17 +48,11 @@ function conferirPalpite() {
       avisos.textContent = `Seu palpite foi baixo`;
     } else {
       resultado.innerHTML = `Errou! Mas chegou perto &#128293;`;
-      avisos.textContent = `Seu palpite ficou um pouco abaixo do número correto!`;
+      avisos.textContent = `Seu último palpite ficou um pouco abaixo do número correto!`;
     }
   }
 
   contagemPalpites++;
-
-  if (contagemPalpites === 6) {
-    resultado.innerHTML = `Fim de Jogo! Você não acertou &#128546;`;
-    avisos.innerHTML = 'Tente novamente &#128541;';
-    fimDeJogo();
-  }
 
   tentativas.textContent = `${contagemPalpites}`;
   palpite.value = '';
