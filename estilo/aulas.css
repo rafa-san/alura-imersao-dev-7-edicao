@@ -248,3 +248,72 @@ hr {
   width: 100%;
   display: block;
 }
+
+
+/* AULA 3 */
+.aula-3 .img-diretor-e-input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.aula-3 .img-diretor {
+  border: 1px solid yellow;
+  width: 100%;
+}
+
+.aula-3 .img-diretor img {
+  margin: auto;
+  padding: 16px;
+  display: block;
+}
+
+.aula-3 .input {
+  border: 1px solid blue;
+  width: 100%;
+}
+
+.aula-3 .input label {
+  border: 1px solid green;
+  margin: 8px;
+  text-align: center;
+  display: block;
+}
+
+.aula-3 .container-3 {
+  border: 1px solid black;
+  margin: auto;
+}
+
+.aula-3 button {
+  background-color: #fff;
+  border: 2px solid var(--cor_4);
+  border-radius: 20px;
+  color: var(--cor_4);
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 8px 2px;
+  margin: 24px auto;
+  width: 200px;
+  display: block;
+}
+
+.aula-3 button:hover {
+  background-color: var(--cor_4);
+  border: 2px solid transparent;
+  color: #fff;
+}
+
+.aula-3 .retorno {
+  border: 1px solid red;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.aula-3 img {
+  border-radius: 8px;
+  margin: 8px;
+}
