@@ -251,37 +251,45 @@ hr {
 
 
 /* AULA 3 */
-.aula-3 .img-diretor-e-input {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.exercicio-e-retorno {
+  background-image: url('../imagens/background-3-menor.png');
+  background-position: bottom left;
+  background-size: cover;
 }
 
-.aula-3 .img-diretor {
-  border: 1px solid yellow;
-  width: 100%;
-}
-
-.aula-3 .img-diretor img {
-  margin: auto;
+.aula-3 .container-1 {
+  color: #fff;
+  font-size: 1.05em;
+  font-weight: 500;
+  line-height: 2.5em;
+  margin: 16px auto;
   padding: 16px;
-  display: block;
+  text-align: center;
 }
 
 .aula-3 .input {
-  border: 1px solid blue;
+  margin: 16px auto;
+  padding: 0 16px;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .aula-3 .input label {
-  border: 1px solid green;
+  background-color: rgba(20, 67, 125, 0.782);
+  border: 1px solid var(--cor_4);
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 500;
   margin: 8px;
+  padding: 8px 2px;
   text-align: center;
+  width: 70%;
   display: block;
 }
 
 .aula-3 .container-3 {
-  border: 1px solid black;
   margin: auto;
 }
 
@@ -294,7 +302,7 @@ hr {
   font-size: 1.1em;
   font-weight: bold;
   padding: 8px 2px;
-  margin: 24px auto;
+  margin: 24px auto 16px;
   width: 200px;
   display: block;
 }
@@ -306,8 +314,8 @@ hr {
 }
 
 .aula-3 .retorno {
-  border: 1px solid red;
   margin: auto;
+  padding: 8px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -315,5 +323,5 @@ hr {
 
 .aula-3 img {
   border-radius: 8px;
-  margin: 8px;
+  margin: 16px;
 }
