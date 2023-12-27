@@ -50,11 +50,7 @@
   }
 
   /* AULA 03 */
-  .aula-3 .img-diretor {
-    max-width: 48%;
-  }
-
-  .aula-3 .input {
+  .aula-3 .input label {
     max-width: 48%;
   }
 }
