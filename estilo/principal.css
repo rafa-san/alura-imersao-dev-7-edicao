@@ -68,8 +68,18 @@ header .logo a {
 .menu-normal .link-aula a,
 .m-responsivo .link-aula a {
   color: #fff;
-  font-size: 19px;
+  font-size: 1.2em;
   text-decoration: none;
+}
+
+.menu-normal .link-aula a:hover,
+.m-responsivo .link-aula a:hover {
+  border-bottom: 3px solid var(--cor_4);
+}
+
+.menu-normal .link-ativo,
+.m-responsivo .link-ativo {
+  border-bottom: 3px solid var(--cor_4);
 }
 
 
@@ -145,9 +155,9 @@ footer a {
 }
 
 footer i {
-  transition: 0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 footer i:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
