@@ -6,7 +6,7 @@ botaoSalvarLista.addEventListener('click', salvarLista);
 function salvarLista() {
   retorno.innerHTML = '';
 
-  // Armazenar os filmes selecionados e limpar a array a cada novo clique no botão
+  // Armazenar os filmes selecionados
   const filmesSelecionados = [];
 
   // Criar vínculo com todas as checkboxes
@@ -19,7 +19,7 @@ function salvarLista() {
     }
   }
   
-  // Encontrar a imagem correspondente ao filme
+  // Vincular a imagem ao filme
   for (let j = 0; j < filmesSelecionados.length; j++) {
     if (filmesSelecionados[j] === 'Cães de Aluguel (1992)') {
       const imagem = document.createElement('img');
@@ -82,5 +82,3 @@ function salvarLista() {
     }
   }
 }
-
-
