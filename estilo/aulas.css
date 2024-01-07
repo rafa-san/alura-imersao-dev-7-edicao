@@ -32,7 +32,17 @@
 
 .apresentacao h3 {
   color: var(--cor_4);
-  margin: 8px 0;
+  margin: 16px 0 8px;
+}
+
+.apresentacao a {
+  color: var(--cor_3);
+  font-weight: 500;
+  /* text-decoration: none; */
+}
+
+.apresentacao a.link-externo::after {
+  content: '\00A0\1F517';
 }
 
 hr {
@@ -163,7 +173,7 @@ hr {
   border: 1px solid #fff;
   border-radius: 8px;
   box-shadow: 2px 2px 6px #fff;
-  margin: 8px auto;
+  margin: 8px;
   padding: 24px 8px;
   width: 95%;
 }
@@ -251,7 +261,7 @@ hr {
 
 
 /* AULA 3 */
-.exercicio-e-retorno {
+.aula-3 .exercicio-e-retorno {
   background-image: url('../imagens/background-3-menor.png');
   background-position: bottom left;
   background-size: cover;
@@ -283,9 +293,9 @@ hr {
   color: #fff;
   font-weight: 500;
   margin: 8px;
-  padding: 8px 2px;
+  padding: 8px 4px;
   text-align: center;
-  width: 70%;
+  width: 78%;
   display: block;
 }
 
@@ -301,8 +311,8 @@ hr {
   cursor: pointer;
   font-size: 1.1em;
   font-weight: bold;
-  padding: 8px 2px;
   margin: 24px auto 16px;
+  padding: 8px 2px;
   width: 200px;
   display: block;
 }
@@ -324,4 +334,111 @@ hr {
 .aula-3 img {
   border-radius: 8px;
   margin: 16px;
+}
+
+
+/* AULA 5 */
+.aula-5 .container-1,
+.aula-5 .container-2,
+.aula-5 .container-3,
+.aula-5 .container-4,
+.aula-5 .container-5 {
+  margin: 8px auto;
+  padding: 16px 8px;
+}
+
+.aula-5 .container-1,
+.aula-5 .container-2 {
+  text-align: center;
+}
+
+.aula-5 .container-2,
+.aula-5 .container-4 {
+  background-image: url('../imagens/background-1.png');
+  background-position: center;
+  color: #fff;
+}
+
+.aula-5 .container-2 {
+  margin: auto;
+}
+
+.aula-5 .jogo-1,
+.aula-5 .jogo-2,
+.aula-5 .jogo-3 {
+  margin: 8px auto;
+  max-width: 310px;
+  padding: 2px 0;
+}
+
+.exercicio-e-retorno h3 {
+  margin: auto;
+  padding: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+.aula-5 .container-2 label {
+  background-color: rgba(20, 67, 125, 0.782);
+  font-weight: 500;
+  margin: auto;
+  padding: 2px;
+  text-align: center;
+  min-width: 24%;
+  display: inline-block;
+}
+
+.aula-5 .container-2 input {
+  border: none;
+  margin: 4px;
+  padding: 4px;
+  text-align: center;
+  width: 32px;
+  display: inline-block;
+}
+
+.aula-5 .container-3 button,
+.aula-5 .container-5 button {
+  background-color: #fff;
+  border: 2px solid var(--cor_4);
+  border-radius: 20px;
+  color: var(--cor_4);
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 16px auto;
+  padding: 8px 2px;
+  width: 240px;
+  display: block;
+}
+
+.aula-5 button:hover {
+  background-color: var(--cor_4);
+  border: 2px solid transparent;
+  color: #fff;
+}
+
+.aula-5 .container-4 {
+  overflow-x: auto;
+}
+
+.aula-5 .container-4 table {
+  border-collapse: collapse;
+  margin: 16px auto;
+  width: 100%;
+}
+
+.aula-5 .container-4 th, 
+.aula-5 .container-4 td {
+  border: 1px solid var(--cor_4);
+  padding: 2px 16px;
+  text-align: center;
+}
+
+.aula-5 .container-5 ol {
+  list-style-position: inside;
+  margin: auto;
+  padding: 8px;
+  max-width: 500px;
 }
