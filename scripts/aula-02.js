@@ -16,6 +16,7 @@ let botaoReinicio;
 novoJogo.style.display = 'none';
 
 enviarPalpite.addEventListener('click', conferirPalpite);
+
 function conferirPalpite() {
   const palpiteUsuario = Number(palpite.value);
   let diferenca;
