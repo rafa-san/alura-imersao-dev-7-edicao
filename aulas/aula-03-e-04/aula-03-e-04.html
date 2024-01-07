@@ -20,8 +20,8 @@
         <li id="icone-menu" title="Abrir Menu">&#9776;</li>
         <li class="link-aula"><a href="../aula-01/aula-01.html">Aula 1</a></li>
         <li class="link-aula"><a href="../aula-02/aula-02.html">Aula 2</a></li>
-        <li class="link-aula"><a href="aula-03-e-04.html">Aulas 3 e 4</a></li>
-        <li class="link-aula"><a href="#">Aula 5</a></li>
+        <li class="link-aula"><a href="aula-03-e-04.html" class="link-ativo">Aulas 3 e 4</a></li>
+        <li class="link-aula"><a href="../aula-05/aula-05.html">Aula 5</a></li>
       </ul>
     </nav>
   </header>
@@ -30,21 +30,19 @@
     <section class="apresentacao">
       <h2>Aulas 3 e 4: Explore Estruturas de Dados Criando um Catálogo de Filmes</h2>
       <div>
-        <h3>Introdução</h3>
-        <p>Nesta aula, exploraremos estruturas de dados e como trabalhar com listas. Abordaremos os seguintes tópicos:</p>
-      <ul>
-        <li>Criação de uma primeira array de filmes usando a sintaxe [];</li>
-        <li>Uso do método filmes.push("Nome Do Filme") para inserir um novo elemento na lista (ou seja, um novo filme na array);</li>
-        <li>Descoberta da quantidade de elementos em uma array com o método array.length;</li>
-        <li>Utilização da instrução for para iterar, ou seja, percorrer todos os elementos de uma array;</li>
-        <li>Criação de uma array com imagens de pôsteres de alguns filmes que gostamos;</li>
-        <li>Utilizaremos o input para permitir a entrada de dados diretamente na tela, evitando a necessidade de inserir informações diretamente no código ou no console.</li>
-        <li>Sintaxe e criação de funções no JavaScript;</li>
-        <li>Integração de funções criadas no JavaScript com o HTML exibido na tela;</li>
-        <li>Condicionamento da execução (ou "chamada") de uma função a um clique em um botão na tela;</li>
-        <li>Uso do JavaScript para acessar o que está sendo exibido na tela e obter valores digitados pelo usuário com getElementById() e .value;</li>
-        <li>Utilização do .endsWith() para verificar se um texto termina com determinados caracteres;</li>
-      </ul>
+        <h3>Apresentação</h3>
+        <p>Nesta aula, vamos trabalhar com <strong>arrays</strong> e desenvolver um catálogo de filmes.</p>
+        <h3>Principais Tópicos</h3>
+        <ul>
+          <li>Criação de uma <strong>array</strong> de filmes usando a sintaxe <strong>[]</strong>;</li>
+          <li>Uso do método <strong>push()</strong> para inserir um novo elemento na lista (ou seja, um novo filme na array);</li>
+          <li>Utilização da instrução <strong>for</strong> para iterar, ou seja, percorrer todos os elementos de uma array;</li>
+          <li>Sintaxe e criação de funções no JavaScript;</li>
+          <li>Integração de funções criadas no JavaScript com o HTML exibido na tela;</li>
+          <li>Uso do JavaScript para acessar o que está sendo exibido na tela e obter valores digitados pelo usuário com <strong>getElementById()</strong> e <strong>.value</strong>;</li>
+        </ul>
+        <h3>Projeto Original</h3>
+        <p><a href="https://codepen.io/imersao-dev/pen/WNPXzqP" target="_blank" class="link-externo">Link do projeto original</a>, desenvolvido pelos instrutores da <strong>Alura</strong>.</p>
       </div>
     </section>
 
@@ -54,7 +52,7 @@
       <section class="exercicio">
         <div class="container-1">
           <p>Listei abaixo, em ordem cronológica, dez filmes do diretor Quentin Tarantino.</p>
-          <p>Selecione seus filmes preferidos e pressione o botão <strong>enviar</strong> para visualizar os respectivos pôsteres.</p>
+          <p>Selecione seus filmes preferidos e pressione o botão <strong>"Enviar"</strong> para visualizar os respectivos pôsteres.</p>
           <p>Para deixar de visualizar o pôster, desmarque a caixa.</p>
         </div>
 
@@ -62,53 +60,43 @@
           <form action="#" method="get">
             <div class="input">
               <label for="filme1">
-                <input type="checkbox" id="filme1" name="filme" value="Cães de Aluguel (1992)" />
-                Cães de Aluguel (1992)
+                <input type="checkbox" id="filme1" name="filme" value="Cães de Aluguel (1992)" /> Cães de Aluguel (1992)
               </label>
             
               <label for="filme2">
-                <input type="checkbox" id="filme2" name="filme" value="Pulp Fiction (1994)" />
-                Pulp Fiction (1994)
+                <input type="checkbox" id="filme2" name="filme" value="Pulp Fiction (1994)" /> Pulp Fiction (1994)
               </label>
             
               <label for="filme3">
-                <input type="checkbox" id="filme3" name="filme" value="Jackie Brown (1997)" />
-                Jackie Brown (1997)
+                <input type="checkbox" id="filme3" name="filme" value="Jackie Brown (1997)" /> Jackie Brown (1997)
               </label>
 
               <label for="filme4">
-                <input type="checkbox" id="filme4" name="filme" value="Kill Bill: Volume 1 (2003)" />
-                Kill Bill: Volume 1 (2003)
+                <input type="checkbox" id="filme4" name="filme" value="Kill Bill: Volume 1 (2003)" /> Kill Bill: Volume 1 (2003)
               </label>
 
               <label for="filme5">
-                <input type="checkbox" id="filme5" name="filme" value="Kill Bill: Volume 2 (2004)" />
-                Kill Bill: Volume 2 (2004)
+                <input type="checkbox" id="filme5" name="filme" value="Kill Bill: Volume 2 (2004)" /> Kill Bill: Volume 2 (2004)
               </label>
 
               <label for="filme6">
-                <input type="checkbox" id="filme6" name="filme" value="À Prova de Morte (2007)" />
-                À Prova de Morte (2007)
+                <input type="checkbox" id="filme6" name="filme" value="À Prova de Morte (2007)" /> À Prova de Morte (2007)
               </label>
 
               <label for="filme7">
-                <input type="checkbox" id="filme7" name="filme" value="Bastardos Inglórios (2009)" />
-                Bastardos Inglórios (2009)
+                <input type="checkbox" id="filme7" name="filme" value="Bastardos Inglórios (2009)" /> Bastardos Inglórios (2009)
               </label>
 
               <label for="filme8">
-                <input type="checkbox" id="filme8" name="filme" value="Django Livre (2012)" />
-                Django Livre (2012)
+                <input type="checkbox" id="filme8" name="filme" value="Django Livre (2012)" /> Django Livre (2012)
               </label>
 
               <label for="filme9">
-                <input type="checkbox" id="filme9" name="filme" value="Os Oito Odiados (2015)" />
-                Os Oito Odiados (2015)
+                <input type="checkbox" id="filme9" name="filme" value="Os Oito Odiados (2015)" /> Os Oito Odiados (2015)
               </label>
 
               <label for="filme10">
-                <input type="checkbox" id="filme10" name="filme" value="Era uma Vez em... Hollywood (2019)" />
-                Era uma Vez em... Hollywood (2019)
+                <input type="checkbox" id="filme10" name="filme" value="Era uma Vez em... Hollywood (2019)" /> Era uma Vez em... Hollywood (2019)
               </label>
             </div>
           </form>
@@ -136,7 +124,7 @@
 
   <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous"></script>
   <script src="../../scripts/menu-responsivo.js"></script>
-  <script src="aula-03.js"></script>
+  <script src="../../scripts/aula-03-e-04.js"></script>
 </body>
 
 </html>
