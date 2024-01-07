@@ -21,7 +21,7 @@
         <li class="link-aula"><a href="../aula-01/aula-01.html">Aula 1</a></li>
         <li class="link-aula"><a href="../aula-02/aula-02.html">Aula 2</a></li>
         <li class="link-aula"><a href="../aula-03-e-04/aula-03-e-04.html">Aulas 3 e 4</a></li>
-        <li class="link-aula"><a href="aula-05.html">Aula 5</a></li>
+        <li class="link-aula"><a href="aula-05.html" class="link-ativo">Aula 5</a></li>
       </ul>
     </nav>
   </header>
@@ -30,16 +30,17 @@
     <section class="apresentacao">
       <h2>Aula 5: Desbravando Objetos e Construindo uma Tabela de Classificação</h2>
       <div>
-        <h3>Introdução</h3>
-        <p>Nesta aula da Imersão Dev, mergulharemos no mundo da programação e aprenderemos a criar uma tabela de classificação.</p>
-        <p>Nesta aula você vai:</p>
+        <h3>Apresentação</h3>
+        <p>Nesta aula da Imersão Dev, aprenderemos a criar uma tabela de classificação.</p>
+        <h3>Principais Tópicos</h3>
         <ul>
           <li>Remover o código estático do HTML;</li>
-          <li>Criar um objeto no JavaScript para cada jogador;</li>
-          <li>Criar uma função que receba um objeto como parâmetro para calcular os pontos;</li>
+          <li>Criar um objeto no JavaScript;</li>
           <li>Exibir o objeto na página HTML;</li>
-          <li>Criar uma função para adicionar vitórias, outra para adicionar empates e uma última para adicionar derrotas;</li>
+          <li>Criar funções e condicionais para preencher a tabela com os dados necessários.</li>
         </ul>
+        <h3>Projeto Original</h3>
+        <p><a href="https://codepen.io/imersao-dev/pen/yLXzvOM?editors=0010" target="_blank" class="link-externo">Link do projeto original</a>, desenvolvido pelos instrutores da <strong>Alura</strong>.</p>
       </div>
     </section>
 
@@ -47,33 +48,33 @@
 
     <section class="exercicio-e-retorno">
       <div class="container-1">
-        <p>Informe nos campos abaixo os resultados dos jogos e depois clique no botão "Salvar Resultados" para adicioná-los na tabela.</p>
+        <p>Informe nos campos abaixo os resultados dos jogos e depois clique no botão <strong>"Salvar Resultados"</strong> para adicioná-los na tabela.</p>
       </div>
 
       <div class="container-2">
         <h2>Jogos</h2>
           <div class="jogo-1">
-            <label for="time-1">Flamengo</label>
-            <input type="number" id="time-1" name="time-1" class="input-gols" required />
+            <label for="time-1" class="time1">Goiás</label>
+            <input type="number" id="time-1" name="time-1" class="input-gols" />
             <span>X</span>
-            <input type="number" id="time-2" name="time-2" class="input-gols" required />
-            <label for="time-2">Fluminense</label>
+            <input type="number" id="time-2" name="time-2" class="input-gols" />
+            <label for="time-2">Santos</label>
           </div>
 
           <div class="jogo-2">
-            <label for="time-3">Corinthians</label>
-            <input type="number" id="time-3" name="time-3" class="input-gols" required />
+            <label for="time-3">Vasco</label>
+            <input type="number" id="time-3" name="time-3" class="input-gols" />
             <span>X</span>
-            <input type="number" id="time-4" name="time-4" class="input-gols" required />
-            <label for="time-4">Palmeiras</label>
+            <input type="number" id="time-4" name="time-4" class="input-gols" />
+            <label for="time-4">Sport</label>
           </div>
 
           <div class="jogo-3">
             <label for="time-5">Grêmio</label>
-            <input type="number" id="time-5" name="time-5" class="input-gols" required />
+            <input type="number" id="time-5" name="time-5" class="input-gols" />
             <span>X</span>
-            <input type="number" id="time-6" name="time-6" class="input-gols" required />
-            <label for="time-6">Internacional</label>
+            <input type="number" id="time-6" name="time-6" class="input-gols" />
+            <label for="time-6">Bahia</label>
           </div>
       </div>
 
@@ -99,12 +100,12 @@
 
       <div class="container-5">
         <button id="atualizar-classificacao">Atualizar Classificação</button>
-        <h2>Critérios de Classificação</h2>
+        <h3>Critérios de Classificação</h3>
         <ol>
           <small>
-            <li>Ficará em primeiro lugar o time com maior número na coluna pontos</li>
-            <li>Em caso de empate na coluna pontos, ficará na frente o time com o maior número na coluna Total de Gols.</li>
-            <li>Em caso de empate na coluna pontos e total de gols, ficará na frente o time que aparece primeiro na tabela dos jogos</li>
+            <li>Ficará em primeiro lugar o time com maior número na coluna <strong>Pontos</strong></li>
+            <li>Em caso de empate na coluna <strong>Pontos</strong>, ficará na frente o time com o maior número na coluna <strong>Total de Gols.</strong></li>
+            <li>Em caso de empate na coluna <strong>Pontos</strong> e <strong>Total de Gols</strong>, ficará na frente o time que aparece primeiro na tabela dos jogos</li>
           </small>
         </ol>
       </div>
@@ -124,8 +125,7 @@
 
   <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous"></script>
   <script src="../../scripts/menu-responsivo.js"></script>
-  <!-- <script src="aula-05.js"></script> -->
-  <script src="aula-05b.js"></script>
+  <script src="../../scripts/aula-05.js"></script>
 </body>
 
 </html>
