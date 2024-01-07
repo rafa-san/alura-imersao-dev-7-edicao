@@ -21,6 +21,7 @@
     display: block;
   }
 
+  
   /* INDEX */
   .container-aulas .aula {
     max-width: 40%;
@@ -48,6 +49,7 @@
   .aula-2 .retorno {
     max-width: 46%;
   }
+
 
   /* AULA 03 */
   .aula-3 .input label {
