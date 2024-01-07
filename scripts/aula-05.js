@@ -183,31 +183,27 @@ function atualizarTabela() {
       <td>${times[3].totalDeGols}</td>
     </tr>
     <tr>
-    <td>${times[4].nome}</td>
-    <td>${times[4].pontos}</td>
-    <td>${times[4].vitorias}</td>
-    <td>${times[4].empates}</td>
-    <td>${times[4].derrotas}</td>
-    <td>${times[4].totalDeGols}</td>
-  </tr>
-  <tr>
-  <td>${times[5].nome}</td>
-  <td>${times[5].pontos}</td>
-  <td>${times[5].vitorias}</td>
-  <td>${times[5].empates}</td>
-  <td>${times[5].derrotas}</td>
-  <td>${times[5].totalDeGols}</td>
-</tr>
+      <td>${times[4].nome}</td>
+      <td>${times[4].pontos}</td>
+      <td>${times[4].vitorias}</td>
+      <td>${times[4].empates}</td>
+      <td>${times[4].derrotas}</td>
+      <td>${times[4].totalDeGols}</td>
+    </tr>
+    <tr>
+      <td>${times[5].nome}</td>
+      <td>${times[5].pontos}</td>
+      <td>${times[5].vitorias}</td>
+      <td>${times[5].empates}</td>
+      <td>${times[5].derrotas}</td>
+      <td>${times[5].totalDeGols}</td>
+    </tr>
   `;
 }
-
 
 function classificacao() {
   const tabela = document.getElementById('tabela-dos-times');
   tabela.innerHTML = '';
-  // // Ordenar times por pontos em ordem decrescente
-  // const timesOrdenados = [...times].sort((a, b) => b.pontos - a.pontos);
-
 
   // Ordenar times por pontos em ordem decrescente
   const timesOrdenados = [...times].sort((a, b) => {
@@ -218,10 +214,6 @@ function classificacao() {
       return b.totalDeGols - a.totalDeGols;
     }
   });
-
-
-
-
 
   for (const time of timesOrdenados) {
     tabela.innerHTML += `
