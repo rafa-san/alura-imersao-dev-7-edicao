@@ -12,3 +12,5 @@ Além da parte visual, meu objetivo também foi adicionar novas funcionalidades 
 
 Para comparar os resultados, dentro da página de cada atividade incluí o link do projeto original desenvolvido pelos instrutores da Alura.
 
+teste
+
