@@ -1,4 +1,6 @@
-# Alura - Projetos da 7º Edição da Imersão Dev
+# Alura
+
+## Projetos da 7º Edição da Imersão Dev
 
 Em novembro de 2023 participei da sétima **Imersão Dev**, organizada pela **Alura** e com a presença dos instrutores Paulo Silveira, Rafaella Ballerini e Guilherme Lima.
 
@@ -11,6 +13,3 @@ Ao desenvolver a minha versão desse projeto, resolvi estruturá-lo em forma de 
 Além da parte visual, meu objetivo também foi adicionar novas funcionalidades em cada um dos exercícios, ao invés de somente copiar os códigos dos instrutores.
 
 Para comparar os resultados, dentro da página de cada atividade incluí o link do projeto original desenvolvido pelos instrutores da Alura.
-
-teste
-
