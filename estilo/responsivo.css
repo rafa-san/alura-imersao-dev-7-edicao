@@ -3,9 +3,9 @@
 @media screen and (min-width: 768px) {
   /* HEADER */
   .menu-normal .links-menu {
-    margin: 24px 8px 11px;
     flex-direction: row;
     justify-content: space-around;
+    margin: 24px 8px 11px;
   }
 
   .links-menu a {

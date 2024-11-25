@@ -18,11 +18,11 @@
 
 /* HEADER */
 header {
+  display: flex;
+  flex-direction: column;
   padding: 16px 8px 8px;
   text-align: center;
   width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 header .logo a {
@@ -31,9 +31,9 @@ header .logo a {
 }
 
 .menu-normal .links-menu {
-  margin: 8px 8px 0;
   display: flex;
   flex-direction: column;
+  margin: 8px 8px 0;
 }
 
 .m-responsivo .links-menu {
@@ -42,11 +42,11 @@ header .logo a {
 
 .menu-normal #icone-menu,
 .m-responsivo #icone-menu {
+  display: block;
   color: white;
   cursor: pointer;
   font-size: 24px;
   padding: 16px;
-  display: block;
 }
 
 .m-responsivo #icone-menu {
@@ -56,9 +56,9 @@ header .logo a {
 
 .menu-normal .link-aula,
 .m-responsivo .link-aula {
+  display: none;
   list-style-type: none;
   padding: 6px;
-  display: none;
 }
 
 .m-responsivo .link-aula {
@@ -85,15 +85,15 @@ header .logo a {
 
 /* INDEX */
 .pagina-principal {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   background-image: url('../imagens/background-2.png');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   height: 100vh;
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .pagina-principal header {
@@ -102,11 +102,11 @@ header .logo a {
 }
 
 .container-aulas {
-  margin: 24px 0;
-  padding: 8px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 24px 0;
+  padding: 8px;
 }
 
 .container-aulas .aula {

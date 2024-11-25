@@ -55,12 +55,12 @@ hr {
 
 /* AULA 01 */
 .aula-1 .exercicio {
-  background-image: url('../imagens/background-1.png');
-  background-position: center;
-  padding: 16px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-image: url('../imagens/background-1.png');
+  background-position: center;
+  padding: 16px 0;
 }
 
 .aula-1 .exercicio .imagem,
@@ -71,21 +71,21 @@ hr {
 
 .aula-1 .exercicio img,
 .aula-2 .exercicio img {
+  display: block;
   height: auto;
   margin: auto;
   width: 100%;
   max-width: 250px;
-  display: block;
 }
 
 .aula-1 .container-1,
 .aula-1 .container-2,
 .aula-1 .container-3 {
-  margin: 8px auto;
-  width: 90%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 8px auto;
+  width: 90%;
 }
 
 .aula-1 .container-1 div,
@@ -96,16 +96,17 @@ hr {
 
 .aula-1 .exercicio a,
 .aula-1 label {
+  display: block;
   color: #fff;
   font-size: 1.1em;
   font-weight: bold;
   margin: auto;
   text-align: center;
-  display: block;
 }
 
 .aula-1 div input,
 .aula-1 div select {
+  display: block;
   border: none;
   color: var(--cor_4);
   font-weight: 600;
@@ -116,7 +117,6 @@ hr {
   padding-left: 6px;
   width: 100%;
   max-width: 200px;
-  display: block;
 }
 
 .aula-1 button {
@@ -160,12 +160,12 @@ hr {
 
 /* AULA 2 */
 .aula-2 .exercicio-e-retorno {
-  background-image: url('../imagens/background-1.png');
-  background-position: center left;
-  padding: 16px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-image: url('../imagens/background-1.png');
+  background-position: center left;
+  padding: 16px 0;
 }
 
 .aula-2 .exercicio,
@@ -179,13 +179,13 @@ hr {
 }
 
 .aula-2 .exercicio .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   color: #fff;
   font-size: 1.1em;
   font-weight: 500;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
 .aula-2 .exercicio .formulario p {
@@ -193,6 +193,7 @@ hr {
 }
 
 .aula-2 .exercicio input {
+  display: block;
   border: none;
   color: var(--cor_4);
   font-weight: 600;
@@ -203,7 +204,6 @@ hr {
   padding-left: 6px;
   width: 100%;
   max-width: 200px;
-  display: block;
 }
 
 .aula-2 .exercicio .container-3 {
@@ -278,15 +278,16 @@ hr {
 }
 
 .aula-3 .input {
-  margin: 16px auto;
-  padding: 0 16px;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 16px auto;
+  padding: 0 16px;
+  width: 100%;
 }
 
 .aula-3 .input label {
+  display: block;
   background-color: rgba(20, 67, 125, 0.782);
   border: 1px solid var(--cor_4);
   border-radius: 8px;
@@ -296,7 +297,6 @@ hr {
   padding: 8px 4px;
   text-align: center;
   width: 78%;
-  display: block;
 }
 
 .aula-3 .container-3 {
@@ -304,6 +304,7 @@ hr {
 }
 
 .aula-3 button {
+  display: block;
   background-color: #fff;
   border: 2px solid var(--cor_4);
   border-radius: 20px;
@@ -314,7 +315,6 @@ hr {
   margin: 24px auto 16px;
   padding: 8px 2px;
   width: 200px;
-  display: block;
 }
 
 .aula-3 button:hover {
@@ -324,11 +324,11 @@ hr {
 }
 
 .aula-3 .retorno {
-  margin: auto;
-  padding: 8px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: auto;
+  padding: 8px;
 }
 
 .aula-3 img {
@@ -379,26 +379,27 @@ hr {
 }
 
 .aula-5 .container-2 label {
+  display: inline-block;
   background-color: rgba(20, 67, 125, 0.782);
   font-weight: 500;
   margin: auto;
   padding: 2px;
   text-align: center;
   min-width: 24%;
-  display: inline-block;
 }
 
 .aula-5 .container-2 input {
+  display: inline-block;
   border: none;
   margin: 4px;
   padding: 4px;
   text-align: center;
   width: 32px;
-  display: inline-block;
 }
 
 .aula-5 .container-3 button,
 .aula-5 .container-5 button {
+  display: block;
   background-color: #fff;
   border: 2px solid var(--cor_4);
   border-radius: 20px;
@@ -410,7 +411,6 @@ hr {
   margin: 16px auto;
   padding: 8px 2px;
   width: 240px;
-  display: block;
 }
 
 .aula-5 button:hover {
