@@ -2,20 +2,18 @@
 
 # Atividades da Imersão Dev
 
-## 1️⃣ Apresentação
-Em novembro de 2023, participei da sétima **Imersão Dev** organizada pela **Alura**, com a presença dos instrutores Guilherme Lima, Paulo Silveira e Rafaella Ballerini.
-
-A imersão foi 100% gratuita e voltada para quem tinha pouco ou nenhum conhecimento em programação e desejava dar os primeiros passos na área. Além disso, serviu também para conhecer a metodologia de ensino da plataforma.
-
-## 2️⃣ Objetivo
-O foco dessa imersão foi, ao longo de cinco aulas muito práticas, ensinar os fundamentos de JavaScript. 
-
-As atividades desenvolvidas ao longo do curso foram as seguintes:
+## 1️⃣ Objetivo
+Compreender os fundamentos de JavaScript desenvolvendo as seguintes atividades:
 
 - Conversor de moedas
 - Jogo de adivinhação
 - Catálogo de filmes
 - Tabela de classificação
+
+## 2️⃣ Descrição
+Em novembro de 2023, participei da sétima **Imersão Dev** organizada pela **Alura**, com a presença dos instrutores **Guilherme Lima**, **Paulo Silveira** e **Rafaella Ballerini**.
+
+A imersão, dividida em cinco aulas, foi 100% gratuita e voltada para quem tinha pouco ou nenhum conhecimento em programação e desejava dar os primeiros passos na área. Além disso, serviu também para conhecer a metodologia de ensino da plataforma.
 
 ## 3️⃣ Principais Modificações
 Criei uma versão personalizada de todas as atividades, estruturando-as em um site com layout unificado e responsivo e, além disso, adicionei novas funcionalidades. 
@@ -35,7 +33,9 @@ Também incluí links para comparar com as soluções originais dos instrutores 
 </div>
 
 ## 5️⃣ Créditos
-Agradeço aos instrutores Guilherme Lima, Paulo Silveira e Rafaella Ballerini pelo aprendizado!
+Agradeço aos instrutores Guilherme Lima, Paulo Silveira e Rafaella Ballerini e também à equipe da Alura pelo aprendizado!
+
+- <a href="https://www.alura.com.br" target="_blank">Alura 🔗</a>
 
 ## 6️⃣ Licença
 Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
